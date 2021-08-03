@@ -1,0 +1,133 @@
+.outer, header, footer {
+    background-color: #121212;
+}
+
+
+/* 
+HEADER 
+*/
+
+header {
+    height: 93px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #bb86FC;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+/* 
+OUTER
+*/
+
+.outer {
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100%;
+}
+
+
+.calculatorContainer {
+    background-color: #2C2C2C;
+    width: 266px;
+    height: 335px;
+    border-radius: 3%;
+}
+
+.resultContainer {
+    background-color: #3A3A3A;
+    height: 70px;
+    width: 250px;
+    margin: 8px auto;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+#lastOperationScreen, #currentOperationScreen {
+    font-family: roboto, sans-serif;
+    font-weight: normal;
+    color: white;
+    padding-right: 8px;
+}
+
+button {
+    height: 40px;
+    width: 55px;
+    background-color: #99989C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: roboto, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button:hover {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.buttonContainer {
+    height: 240px;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+
+}
+
+#divisionButton {
+    border-radius: 0 5% 0 0;
+}
+
+#zeroButton {
+    border-radius: 0 0 0 5%;
+}
+
+#clearButton {
+    background-color: #FCC786;
+    border-radius: 5% 0 0 0;
+}
+
+#equalButton {
+    width: 120px;
+    background-color: #9886FC;
+    border-radius: 0 0 5% 0;
+}
+
+/* 
+FOOTER
+*/
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #bb86FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 51px;
+    font-family: roboto, sans-serif;
+}
